@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farewell for Shruti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Farewell to Our Dearest Shruti</h1>
+        <img src="shruti.jpg" alt="Shruti's Image" class="profile-image">
+        <p class="shayari">
+            Tumhe humse bichadne ka ghum toh hoga,<br>
+            Lekin tumhare jaane ka ehsaas hamesha rahega.<br>
+            Hum bas yeh kehna chahte hain tumhe,<br>
+            Tumhare bina humara jeewan adhura sa rahega. 💕
+        </p>
+        <button onclick="startInteractive()">Proceed to Interactive Farewell</button>
+    </section>
+
+    <!-- Interactive Section -->
+    <section id="interactive" style="display: none;">
+        <h2>Choose an Option</h2>
+        <button onclick="chooseOption('riddle1')">Option 1</button>
+        <button onclick="chooseOption('riddle2')">Option 2</button>
+        <button onclick="chooseOption('riddle3')">Option 3</button>
+    </section>
+
+    <!-- Riddle Section -->
+    <section id="riddle" style="display: none;">
+        <h3>Here's Your Riddle!</h3>
+        <p id="riddle-text"></p>
+        <input type="text" id="riddle-answer" placeholder="Your answer...">
+        <button onclick="checkAnswer()">Submit</button>
+        <p id="answer-feedback"></p>
+    </section>
+
+    <!-- Video Message Section -->
+    <section id="video-message" style="display: none;">
+        <h3>Here's a Special Message for You!</h3>
+        <video controls>
+            <source src="message.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
