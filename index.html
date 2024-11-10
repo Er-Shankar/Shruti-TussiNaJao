@@ -9,39 +9,50 @@
 <body>
     <!-- Home Section -->
     <section id="home">
-        <h1>Farewell to Our Dearest Shruti</h1>
-        <img src="shruti.jpg" alt="Shruti's Image" class="profile-image">
-        <p class="shayari">
-            "Tere jaane ka gham aur na aane ka gham,<br>
-            phir zamaane ka gham kya karein..." 💕
-        </p>
-        <button onclick="startInteractive()">Proceed to Interactive Farewell</button>
+        <div class="container">
+            <h1>Farewell, Dear Shruti 💖</h1>
+            <img src="shruti.jpg" alt="Shruti's Image" class="profile-image">
+            <p class="shayari">
+                "Tum yaad aaoge humesha,<br>
+                Har pal, har lamha, iss zindagi mein...<br>
+                Alvida kahna toh mushkil hai,<br>
+                Bas hum duaon mein yaad rakhna...🌸"
+            </p>
+            <button onclick="startInteractive()">Proceed to Interactive Farewell</button>
+        </div>
     </section>
 
     <!-- Interactive Section -->
     <section id="interactive" style="display: none;">
-        <h2>Choose an Option</h2>
-        <button onclick="chooseOption('riddle1')">Option 1</button>
-        <button onclick="chooseOption('riddle2')">Option 2</button>
-        <button onclick="chooseOption('riddle3')">Option 3</button>
+        <div class="container">
+            <h2>Pick a Farewell Journey</h2>
+            <button onclick="chooseOption('riddle1')">Sweet Memory</button>
+            <button onclick="chooseOption('riddle2')">Funny Moment</button>
+            <button onclick="chooseOption('riddle3')">Heartfelt Message</button>
+        </div>
     </section>
 
     <!-- Riddle Section -->
     <section id="riddle" style="display: none;">
-        <h3>Here's Your Riddle!</h3>
-        <p id="riddle-text"></p>
-        <input type="text" id="riddle-answer" placeholder="Your answer...">
-        <button onclick="checkAnswer()">Submit</button>
-        <p id="answer-feedback"></p>
+        <div class="container">
+            <h3>Guess This to Uncover the Surprise!</h3>
+            <p id="riddle-text"></p>
+            <input type="text" id="riddle-answer" placeholder="Your answer...">
+            <button onclick="checkAnswer()">Submit</button>
+            <p id="answer-feedback"></p>
+        </div>
     </section>
 
     <!-- Video Message Section -->
     <section id="video-message" style="display: none;">
-        <h3>Here's a Special Message for You!</h3>
-        <video controls width="320">
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <div class="container">
+            <h3>Here’s a Special Message Just for You, Shruti!</h3>
+            <video controls width="320">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>We will always cherish our moments with you. 💖</p>
+        </div>
     </section>
 
     <script src="script.js"></script>
