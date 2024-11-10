@@ -1,13 +1,15 @@
 function startInteractive() {
+    // Hide the home section and show the interactive section
     document.getElementById('home').style.display = 'none';
     document.getElementById('interactive').style.display = 'block';
 }
 
 function chooseOption(option) {
+    // Hide the interactive section and show the riddle section
     document.getElementById('interactive').style.display = 'none';
     document.getElementById('riddle').style.display = 'block';
 
-    // Set riddle text based on chosen option
+    // Set riddle text based on the chosen option
     if (option === 'riddle1') {
         document.getElementById('riddle-text').innerText = 'What has keys but can’t open locks?';
         window.correctAnswer = 'keyboard';
