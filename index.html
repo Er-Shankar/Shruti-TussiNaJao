@@ -10,43 +10,46 @@
     <!-- Home Section -->
     <section id="home">
         <div class="container">
-            <h1>Farewell, Dear Shruti 💖</h1>
-            <img src="IMG-20231014-WA0062.jpg" alt="Shruti's Image" class="profile-image">
-            <p class="shayari">
-                "Tum yaad aaoge humesha,<br>
-                Har pal, har lamha, iss zindagi mein...<br>
-                Alvida kahna toh mushkil hai,<br>
-                Bas hum duaon mein yaad rakhna...🌸"
+            <h1 class="fancy-heading">A Heartfelt Farewell, Shruti 🌸</h1>
+            <img src="shruti.jpg" alt="Shruti's Image" class="profile-image">
+            <p class="farewell-message">
+                "Dear Shruti,<br>
+                It's been an incredible journey with you! Your presence has brightened our days and added joy to our moments.<br>
+                This isn't goodbye, just a see you later. Until we meet again, keep shining!"
             </p>
-            <button onclick="startInteractive()">Proceed to Interactive Farewell</button>
+            <button onclick="startInteractive()">Proceed to the Next Page... there's a fun riddle challenge waiting! 😉</button>
         </div>
     </section>
 
-    <!-- Interactive Section -->
+    <!-- Interactive Riddle Section with Cards -->
     <section id="interactive" style="display: none;">
         <div class="container">
-            <h2>Pick a Farewell Journey</h2>
-            <button onclick="chooseOption('riddle1')">Sweet Memory</button>
-            <button onclick="chooseOption('riddle2')">Funny Moment</button>
-            <button onclick="chooseOption('riddle3')">Heartfelt Message</button>
+            <h2>Choose Your Farewell Memory Journey!</h2>
+            <div class="card" onclick="chooseOption('riddle1')">
+                <h3>Sweet Memory</h3>
+                <p>I am something you can’t see, but when I’m around, you’ll never forget me. What am I?</p>
+            </div>
+            <div class="card" onclick="chooseOption('riddle2')">
+                <h3>Funny Moment</h3>
+                <p>What can make you laugh even when you’re down, and is often shared with friends?</p>
+            </div>
+            <div class="card" onclick="chooseOption('riddle3')">
+                <h3>Heartfelt Message</h3>
+                <p>I am a feeling that lasts forever, and I grow stronger as time goes on. What am I?</p>
+            </div>
         </div>
     </section>
 
-    <!-- Riddle Section -->
-    <section id="riddle" style="display: none;">
-        <div class="container">
-            <h3>Guess This to Uncover the Surprise!</h3>
-            <p id="riddle-text"></p>
-            <input type="text" id="riddle-answer" placeholder="Your answer...">
-            <button onclick="checkAnswer()">Submit</button>
-            <p id="answer-feedback"></p>
-        </div>
-    </section>
-
-    <!-- Video Message Section -->
-    <section id="video-message" style="display: none;">
-        <div class="container">
-            <h3>Here’s a Special Message Just for You, Shruti!</h3>
+    <!-- Correct Answer Section with Themed Background and Collage -->
+    <section id="correct-answer" style="display: none;">
+        <div class="container collage-theme">
+            <h3>Here's a Special Message and Memories Collage for You, Shruti!</h3>
+            <div class="collage">
+                <img src="photo1.jpg" alt="Memory 1">
+                <img src="photo2.jpg" alt="Memory 2">
+                <img src="photo3.jpg" alt="Memory 3">
+                <img src="photo4.jpg" alt="Memory 4">
+            </div>
             <video controls width="320">
                 <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                 Your browser does not support the video tag.
