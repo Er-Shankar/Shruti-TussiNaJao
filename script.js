@@ -1,16 +1,14 @@
-function startInteractive() {
+// Function to show the interactive section on the same page
+function openInteractivePage() {
+    // Hide the home section
     document.getElementById('home').style.display = 'none';
+    // Show the interactive section
     document.getElementById('interactive').style.display = 'block';
 }
 
-
-
-// // Function to open the interactive page in a new tab
-// function openInteractivePage() {
-//     window.open('interactive.html', '_blank');
-// }
-
 // Function to open each card's content in a new tab
 function openCardPage(page) {
-    window.open(page, '_blank');
+    // Use the full URL to open each specific riddle page in a new tab
+    const baseUrl = 'https://your-Er-Shankar.github.io/Shruti-TussiNaJao/'; // Replace with your GitHub username and repo name
+    window.open(baseUrl + page, '_blank');
 }
