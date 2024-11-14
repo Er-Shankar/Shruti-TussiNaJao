@@ -1,4 +1,4 @@
-/* General body styling with background color */
+/* General body styling with new background color */
 body {
     font-family: 'Georgia', serif;
     text-align: center;
@@ -10,7 +10,7 @@ body {
 
 /* Container styling for full-width content */
 .container {
-    width: 90%; /* Allow the container to take up most of the screen */
+    width: 90%; /* Use most of the screen width */
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
@@ -27,6 +27,13 @@ body {
     border: 5px solid #a7c5eb;
 }
 
+/* Fancy Heading */
+.fancy-heading {
+    font-size: 2.5em;
+    color: #5d5c61;
+    margin-bottom: 20px;
+}
+
 /* Card Container for two-column layout */
 .card-container {
     display: flex;
@@ -35,12 +42,13 @@ body {
     justify-content: center;
 }
 
+/* Card Styles with Unique Colors */
 .card {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    flex: 1 1 calc(50% - 40px); /* Two cards per row with spacing */
+    flex: 1 1 calc(45% - 20px); /* Two cards per row with spacing */
     text-align: center;
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -50,7 +58,19 @@ body {
     transform: translateY(-5px);
 }
 
-/* Collage styling in the Third Page */
+.card-sweet {
+    background-color: #fde2e4;
+}
+
+.card-funny {
+    background-color: #cfe9e6;
+}
+
+.card-heartfelt {
+    background-color: #d5c6e0;
+}
+
+/* Collage Theme */
 .collage-theme {
     background-color: #fef9ef;
     border-radius: 10px;
@@ -62,14 +82,15 @@ body {
 /* New Collage Layout */
 .collage {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 10px;
     margin-bottom: 20px;
 }
 
 .collage img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     border-radius: 8px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
 }
@@ -94,7 +115,7 @@ button:hover {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .card {
-        flex: 1 1 100%; /* Stacks cards on smaller screens */
+        flex: 1 1 100%; /* Stack cards on smaller screens */
     }
 
     .profile-image-large {
