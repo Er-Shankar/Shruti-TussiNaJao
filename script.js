@@ -9,6 +9,6 @@ function openInteractivePage() {
 // Function to open each card's content in a new tab
 function openCardPage(page) {
     // Use the full URL to open each specific riddle page in a new tab
-    const baseUrl = 'https://Er-Shankar.github.io/Shruti-TussiNaJao/'; // Replace with your GitHub username and repo name
+    const baseUrl = 'https://shruti-tussinaajao.com//'; // Replace with your GitHub username and repo name
     window.open(baseUrl + page, '_blank');
 }
