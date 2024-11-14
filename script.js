@@ -10,5 +10,5 @@ function openInteractivePage() {
 function openCardPage(page) {
     // Use the full URL to open each specific riddle page in a new tab
     const baseUrl = 'https://shruti-tussinaajao.com/'; // Replace with your GitHub username and repo name
-    window.open(baseUrl + page, '_blank');
+    window.open(page, '_blank');
 }
